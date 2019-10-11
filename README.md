@@ -1,4 +1,4 @@
-# Brute-Force-Hash
+# Brute-Force-Hash-Cracker
 
 "generate_wordlist.py" is meant to generate wordlist, to be later used in brute force attack.
 
