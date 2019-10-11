@@ -1,6 +1,7 @@
 import hashlib
 
 def hashing(password):
+    """ Generate MD5 hash of given string """
     hash1 = hashlib.md5(password.encode())
     hash1 = hash1.hexdigest()
     return(hash1)
@@ -13,10 +14,11 @@ def main():
         for line in f:
             line = line.strip()
             if hashing(line) == hashed_pass:
-                print("Password is: " + line)
+                result = ("Password is: " + line)
+                break
             else:
-                print("Couldn't find a password.")
-
-
+                result = ("Couldn't establish password")
+    print(result)
+    
 if __name__=="__main__":
     main()
